@@ -22,13 +22,19 @@ class Program
         // Храню свои объекты в списке
         List<ParentClass> persons = new List<ParentClass>();
         persons.Add(ChildClassFactory.CreateChild("Alice", 5, "painting"));
-        persons.Add(StudentClassFactory.CreateStudent("Marsel", 15, "Programmer"));
-        persons.Add(WorkerClassFactory.CreateWorker("Charlie", 30, "cooking"));
-        persons.Add(WorkerClassFactory.CreateWorker("Chen", 29, "banker"));
-        persons.Add(WorkerClassFactory.CreateWorker("Clara", 60, "IT-Manager")); 
+        persons.Add(StudentClassFactory.CreateStudent("Marsel",18, "Programmer"));
+        persons.Add(WorkerClassFactory.CreateWorker("Ivan", 30, "cooking"));
+        persons.Add(WorkerClassFactory.CreateWorker("Oleg", 29, "banker"));
+        persons.Add(WorkerClassFactory.CreateWorker("Masha", 60, "IT-Manager")); 
         persons.Add(StudentClassFactory.CreateStudent("Valera", 15, "Veb-developer"));
         persons.Add(ChildClassFactory.CreateChild("Alina", 8, "Computer games"));
-
+        persons.Add(StudentClassFactory.CreateStudent("Amir", 17, "Programmer"));
+        persons.Add(ChildClassFactory.CreateChild("Andrey", 3, "Game"));
+        persons.Add(StudentClassFactory.CreateStudent("Shamil",20, "Programmer"));
+        persons.Add(StudentClassFactory.CreateStudent("Lenis", 16, "Programmer"));
+        persons.Add(ChildClassFactory.CreateChild("Vika", 2, "Game"));
+        persons.Add(ChildClassFactory.CreateChild("Adelia", 6, "Game"));
+        persons.Add(WorkerClassFactory.CreateWorker("Elvin",40, "Seller"));
 
 
         // Сортировка объектов по возрасту (пузырьковая сортировка)
@@ -73,3 +79,5 @@ class Program
         }
     }
 }
+
+
